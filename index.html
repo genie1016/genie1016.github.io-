@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>It-Girl Self-Love Diary</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="wrap-bg"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- COVER -->
+  <div class="splash" id="splash">
+    <div class="cover3d">
+      <div class="book">
+        <div class="case"></div><div class="ring"></div>
+        <div class="cover">
+          <div class="frame"></div>
+          <div class="cover-title">I(LO)VEME💗 Diary</div>
+          <div class="heart-window">
+            <!-- 단순화한 하트 -->
+            <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="heartGrad" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#ffd4e7"/>
+                  <stop offset="100%" stop-color="#ff8fb6"/>
+                </linearGradient>
+              </defs>
+              <path d="M100,75 C85,60 55,47 55,30 C55,17 66,10 76,10 C86,10 95,16 100,25
+                       C105,16 114,10 124,10 C134,10 145,17 145,30 C145,47 115,60 100,75 Z"
+                    fill="url(#heartGrad)" stroke="#e6dfe6" stroke-width="4"/>
+            </svg>
+          </div>
+          <button class="open-btn" id="openDiary">열기</button>
+          <div class="hint">다이어리 쓰기!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APP -->
+  <div class="wrap" id="app" style="visibility:hidden">
+    <header>
+      <div class="hero">
+        <div class="emoji">🩰</div>
+        <div>
+          <div class="title">I(LO)VEME💗 Diary</div>
+          <small>IVE가 들어줄게! Tell Me Your Secret!</small>
+        </div>
+        <div style="margin-left:auto; display:flex; gap:8px;">
+          <button class="btn" id="copyLast">응원 복사</button>
+          <button class="btn" id="showCover">표지 다시 보기</button>
+        </div>
+      </div>
+
+      <div class="topbar">
+        <div style="display:flex; gap:8px;">
+          <button class="btn" id="export">내보내기</button>
+          <button class="btn" id="clear">모두 삭제</button>
+        </div>
+        <button class="btn btn-primary" id="scrollBottom">⬇ 대화 맨아래</button>
+      </div>
+    </header>
+
+    <section class="tone">
+      <button data-tone="warm">💗 IVE 웅니</button>
+      <button data-tone="itgirl" class="active">🎀 Itgirl VIBE</button>
+      <button data-tone="coach">🎯 코치모드!</button>
+    </section>
+
+    <div class="presets" id="presets"></div>
+
+    <main>
+      <div class="paper">
+        <div class="list" id="list"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="composer">
+        <textarea id="input" placeholder="오늘의 마음을 알려줘! 나만 알고있을게!✍️"></textarea>
+        <button class="btn btn-primary" id="send">보내기</button>
+      </div>
+      <div class="hint">로컬 저장: 이 페이지의 기록은 이 기기(localStorage)에만 저장됩니다.</div>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
