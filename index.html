@@ -19,14 +19,9 @@
           <div class="frame"></div>
           <div class="cover-title">I(LO)VEME💗 Diary</div>
           <div class="heart-window">
-            <!-- 단순화한 하트 -->
             <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="heartGrad" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#ffd4e7"/>
-                  <stop offset="100%" stop-color="#ff8fb6"/>
-                </linearGradient>
-              </defs>
+              <defs><linearGradient id="heartGrad" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#ffd4e7"/><stop offset="100%" stop-color="#ff8fb6"/></linearGradient></defs>
               <path d="M100,75 C85,60 55,47 55,30 C55,17 66,10 76,10 C86,10 95,16 100,25
                        C105,16 114,10 124,10 C134,10 145,17 145,30 C145,47 115,60 100,75 Z"
                     fill="url(#heartGrad)" stroke="#e6dfe6" stroke-width="4"/>
@@ -53,7 +48,6 @@
           <button class="btn" id="showCover">표지 다시 보기</button>
         </div>
       </div>
-
       <div class="topbar">
         <div style="display:flex; gap:8px;">
           <button class="btn" id="export">내보내기</button>
@@ -72,9 +66,7 @@
     <div class="presets" id="presets"></div>
 
     <main>
-      <div class="paper">
-        <div class="list" id="list"></div>
-      </div>
+      <div class="paper"><div class="list" id="list"></div></div>
     </main>
 
     <footer>
